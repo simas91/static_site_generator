@@ -12,11 +12,11 @@ template_path = "./template.html"
 
 
 def main():
-    basepath = sys.argv[0]
+    basepath = sys.argv[1]
     if not basepath:
         basepath = "/"
 
-    print("Deleting public directory...")
+    print("Deleting docs directory...")
     if os.path.exists(dir_path_public):
         shutil.rmtree(dir_path_public)
 
